@@ -12,23 +12,23 @@ const Jsuser = {
     lastLoginDays: ["Monday", "saturday"]
 }
 
-console.log(Jsuser.email)
-console.log(Jsuser["email"])
-console.log(Jsuser["full name"])
+// console.log(Jsuser.email)
+// console.log(Jsuser["email"])
+// console.log(Jsuser["full name"])
 // console.log(Jsuser[mySym])
 
 Jsuser.email = "hitesh@chatgpt.com"
 // Object.freeze(Jsuser)
 Jsuser.email = "prakhar@microsoft.com"
-console.log(Jsuser);
+// console.log(Jsuser);
 
 
 Jsuser.greeting = function(){
-    console.log("Hello JS user");
+    // console.log("Hello JS user");
 }
 
 Jsuser.greetingtwo = function(){
-    console.log(`helllo js user, ${this.name}`);
+    // console.log(`helllo js user, ${this.name}`);
 }
 
 // console.log(Jsuser.greeting());
@@ -55,7 +55,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname?.userfullname.firstname);
+// console.log(regularUser.fullname?.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -99,12 +99,6 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor} = course
-console.log(courseInstructor);
+const {courseInstructor: instructor} = course
+console.log(Instructor);
 
-
-const navbar = ({company}) => {
-
-}
-
-navbar(company = "hitesh")
