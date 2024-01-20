@@ -115,7 +115,7 @@ if (userEmail) {
 const emptyObj = {}
 
 if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
+    // console.log("Object is empty");
 }
 
 // Nullish Coalescing Operator (??): null undefined
@@ -128,11 +128,35 @@ val1 = null ?? 10 ?? 20
 
 
 
-console.log(val1);
+// console.log(val1);
 
 // Terniary Operator
 
 // condition ? true : false
 
 const iceTeaPrice = 100
-iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+// iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+
+// while condition
+
+
+let index = 0
+while (index<=10){
+   console.log(`value of index is ${index}`);
+   index = index + 2
+}
+
+let myArray = ['flash', "batman", "superman"]
+
+let arr = 0
+while (arr < myArray.length){
+    console.log(`value is ${myArray[arr]}`);
+    arr = arr + 1
+}
+
+let score = 11
+
+do{
+   console.log(`score is ${score}`);
+   score++
+}while (score <= 10);
